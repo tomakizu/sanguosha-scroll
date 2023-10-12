@@ -43,8 +43,6 @@ scrollButtons.forEach((button) => {
             button.classList.remove('btn-light');
             button.classList.add('btn-outline-light');
         }
-
-        console.log(button.innerText);
     });
 });
 
