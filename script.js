@@ -24,7 +24,6 @@ const data = [
     "挾天子以令諸候"
 ];
 
-console.log(data);
 const container = document.querySelector('#mainContainer');
 for (const card of data) {
     const button = document.createElement('button');
