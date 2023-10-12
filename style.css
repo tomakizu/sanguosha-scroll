@@ -1,3 +1,15 @@
 body {
     background-color: #212529;
 }
+
+.btn-outline-light:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: rgb(248, 249, 250) !important;
+    text-decoration: none !important;
+}
+
+.btn-light:hover {
+    background-color: rgb(248, 249, 250) !important;
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none !important;
+}
