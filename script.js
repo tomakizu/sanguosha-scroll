@@ -17,7 +17,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const scrollButtons = document.querySelectorAll('.scroll-button');
     scrollButtons.forEach((button) => {
-        button.addEventListener('click', () => {
+        let timer;
+        button.addEventListener('touchstart', () => {
+            timer = setTimeout(() => {
+                alert('【' + button.textContent + '】' + '\n' + data[button.textContent]);
+            }, 500);
+        });
+        button.addEventListener('touchend', () => {
+            clearTimeout(timer);
+
             if (button.classList.contains('btn-outline-light')) {
                 button.classList.remove('btn-outline-light');
                 button.classList.add('btn-light');
@@ -25,6 +33,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 button.classList.remove('btn-light');
                 button.classList.add('btn-outline-light');
             }
+        });
+        button.addEventListener('touchcancel', () => {
+            clearTimeout(timer);
         });
     });
 
