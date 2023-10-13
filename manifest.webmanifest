@@ -4,8 +4,8 @@
     "description": "Progressive Web App for Sanguosha Scroll",
     "scope": "/sanguosha-scroll/",
     "start_url": "/sanguosha-scroll/",
-    "background_color": "#ffffff",
-    "theme_color": "#ffffff",
+    "background_color": "#212529",
+    "theme_color": "#212529",
     "display": "standalone",
     "icons": [
         {
