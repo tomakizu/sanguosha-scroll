@@ -1,5 +1,5 @@
-var GHPATH = '/sanguosha-scroll-pwa';
-var APP_PREFIX = 'sgs_scroll_pwa_';
+var GHPATH = '/sanguosha-scroll';
+var APP_PREFIX = 'sgs_scroll_';
 var VERSION = '20231014';
 var URLS = [
     `${GHPATH}/`,

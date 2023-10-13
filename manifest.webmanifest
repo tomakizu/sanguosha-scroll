@@ -1,15 +1,15 @@
 {
-    "name": "Sanguosha Scroll PWA",
-    "short_name": "SGS_Scroll_PWA",
+    "name": "Sanguosha Scroll",
+    "short_name": "SGS_Scroll",
     "description": "Progressive Web App for Sanguosha Scroll",
-    "scope": "/sanguosha-scroll-pwa/",
-    "start_url": "/sanguosha-scroll-pwa/",
+    "scope": "/sanguosha-scroll/",
+    "start_url": "/sanguosha-scroll/",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
     "display": "standalone",
     "icons": [
         {
-            "src": "/sanguosha-scroll-pwa/icon.png",
+            "src": "/sanguosha-scroll/icon.png",
             "type": "image/png",
             "sizes": "512x512"
         }
