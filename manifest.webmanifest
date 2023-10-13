@@ -1,6 +1,6 @@
 {
-    "name": "Sanguosha Scroll",
-    "short_name": "SGS_Scroll",
+    "name": "三國殺錦囊",
+    "short_name": "三國殺錦囊",
     "description": "Progressive Web App for Sanguosha Scroll",
     "scope": "/sanguosha-scroll/",
     "start_url": "/sanguosha-scroll/",
