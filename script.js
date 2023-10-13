@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
-    const data = await fetch('https://tomakizu.github.io/sanguosha-scroll/data.json').then((response) => response.json());
+    const data = await fetch('/data.json').then((response) => response.json());
 
     const container = document.querySelector('#scrollRow');
     for (const card of data) {
