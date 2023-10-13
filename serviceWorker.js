@@ -1,6 +1,6 @@
 var GHPATH = '/sanguosha-scroll';
 var APP_PREFIX = 'sgs_scroll_';
-var VERSION = '20231014_6';
+var VERSION = '20231014_7';
 var URLS = [
     `${GHPATH}/`,
     `${GHPATH}/index.html`,

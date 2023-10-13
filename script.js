@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const data = await fetch('./data.json').then((response) => response.json());
+    let cardOnHold = '';
 
     const container = document.querySelector('#scrollRow');
     for (const card in data) {
@@ -19,13 +20,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     scrollButtons.forEach((button) => {
         let timer;
         button.addEventListener('click', () => {
-            if (button.classList.contains('btn-outline-light')) {
+            console.log(button.textContent + ' clicked');
+            if (button.classList.contains('btn-outline-light') && cardOnHold != button.textContent) {
                 button.classList.remove('btn-outline-light');
                 button.classList.add('btn-light');
-            } else if (button.classList.contains('btn-light')) {
+            } else if (button.classList.contains('btn-light') && cardOnHold != button.textContent) {
                 button.classList.remove('btn-light');
                 button.classList.add('btn-outline-light');
             }
+            cardOnHold = '';
         });
         button.addEventListener('touchstart', () => {
             timer = setTimeout(() => {
@@ -38,6 +41,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
         button.addEventListener('touchcancel', () => {
             clearTimeout(timer);
+            cardOnHold = '';
         });
     });
 
