@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const data = await fetch('./data.json').then((response) => response.json());
 
     const container = document.querySelector('#scrollRow');
-    for (const card of data) {
+    for (const card in data) {
         const div = document.createElement('div');
         div.setAttribute('class', 'col-6 d-grid mb-3');
 
